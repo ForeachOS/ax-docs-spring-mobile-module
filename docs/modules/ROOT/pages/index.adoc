@@ -1,6 +1,6 @@
 = SpringMobileModule
 
-SpringMobileModule activates support for {spring-mobile-url}[Spring Mobile] in the Across context.
+SpringMobileModule activates support for https://projects.spring.io/spring-mobile/[Spring Mobile] in the Across context.
 By default `ViewResolver` beans will be configured for device specific views and `DeviceType` resolving will be enabled.
 
 == Configuration

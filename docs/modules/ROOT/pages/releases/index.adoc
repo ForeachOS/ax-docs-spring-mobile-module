@@ -1,0 +1,25 @@
+= SpringMobileModule releases
+
+[[module-artifact]]
+== Artifact
+
+[source,xml]
+----
+<dependencies>
+    <dependency>
+        <groupId>com.foreach.across.modules</groupId>
+        <artifactId>spring-mobile-module</artifactId>
+    </dependency>
+</dependencies>
+----
+
+== Release notes
+
+SpringMobileModule follows a https://semver.org[semantic versioning] scheme.
+
+* xref:releases/2.x.adoc#2-0-0[2.0.0]
+
+[[module-dependencies]]
+== Module dependencies
+
+SpringMobileModule only has a required dependency on AcrossWebModule.

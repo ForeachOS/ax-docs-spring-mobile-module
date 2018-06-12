@@ -1,0 +1,6 @@
+= 2.x.x release notes
+
+[#2-0-0]
+== 2.0.0.RELEASE
+
+* compatibility changes to support Across 2.0.0 and Thymeleaf 3

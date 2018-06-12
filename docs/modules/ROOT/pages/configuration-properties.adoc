@@ -1,0 +1,16 @@
+= Module settings
+
+|===
+|Property |Type |Description |Default
+
+|springMobile.deviceResolverRegistration
+|`DeviceResolverRegistration.class`
+|Register the DeviceResolver as servlet filter or handler interceptor.
+|_DeviceResolverRegistration.FILTER_
+
+|springMobile.deviceTypes
+|`DeviceType[].class`
+|Device types for which view resolving should be configured.
+|_{DeviceType.MOBILE, DeviceType.TABLET}_
+
+|===

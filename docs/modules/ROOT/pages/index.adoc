@@ -1,80 +1,10 @@
 = SpringMobileModule
-Arne Vandamme, Sander Van Loock
-2.0.0.RELEASE
-:toc: left
-:sectanchors:
-:module-version: 2.0.0.RELEASE
-:module-name: SpringMobileModule
-:module-artifact: spring-mobile-module
-:module-url: https://foreach.atlassian.net/wiki/display/AX/SpringMobileModule
-:spring-mobile-url: http://projects.spring.io/spring-mobile/
 
-[copyright,verbatim]
---
-Copyright (C) 2014-2015 +
-[small]#Copies of this document may be made for your own use and for distribution to others, provided that you do not charge any fee for such copies and further provided that each copy contains this Copyright Notice, whether distributed in print or electronically.#
---
-
-[abstract]
-== About
-{module-name} activates support for {spring-mobile-url}[Spring Mobile] in the Across context.
+SpringMobileModule activates support for {spring-mobile-url}[Spring Mobile] in the Across context.
 By default `ViewResolver` beans will be configured for device specific views and `DeviceType` resolving will be enabled.
 
-Module website: {module-url}
-
-:numbered:
-== General information
-
-=== Artifact
-[source,xml,indent=0]
-[subs="verbatim,quotes,attributes"]
-----
-	<dependencies>
-		<dependency>
-			<groupId>com.foreach.across.modules</groupId>
-			<artifactId>{module-artifact}</artifactId>
-			<version>{module-version}</version>
-		</dependency>
-	</dependencies>
-----
-
-=== Module dependencies
-{module-name} only has a required dependency on AcrossWebModule.
-
-=== Module settings
-
-|===
-|Property |Type |Description |Default
-
-|springMobile.deviceResolverRegistration
-|`DeviceResolverRegistration.class`
-|Register the DeviceResolver as servlet filter or handler interceptor.
-|_DeviceResolverRegistration.FILTER_
-
-|springMobile.deviceTypes
-|`DeviceType[].class`
-|Device types for which view resolving should be configured.
-|_{DeviceType.MOBILE, DeviceType.TABLET}_
-
-|===
-
-== What's new in this version?
-:numbered!:
-=== 2.0.0.RELEASE
-
-* compatibility changes to support Across 2.0.0 and Thymeleaf 3
-
-=== 1.0.1.RELEASE
-
-* refactored to support Across 1.1.2 (breaking change)
-* settings are now configurable through properties with Spring configuration metadata support
-
-=== 1.0.0.RELEASE
-Initial public release available on http://search.maven.org/[Maven central].
-
-:numbered:
 == Configuration
-By default the {module-name} will configure the Across web `ViewResolver` beans to look for **/mobile** and **/tablet** specific views with fallback options.
+By default the SpringMobileModule will configure the Across web `ViewResolver` beans to look for **/mobile** and **/tablet** specific views with fallback options.
 A `LiteDeviceResolver` will also be available along with a `DeviceWebArgumentResolver`.
 A `DeviceBasedViewNameResolver` can be wired to prepend view names with the prefix of the current device.
 

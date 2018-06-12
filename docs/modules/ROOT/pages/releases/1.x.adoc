@@ -1,0 +1,9 @@
+= 1.x.x release notes
+
+== 1.0.1.RELEASE
+
+* refactored to support Across 1.1.2 (breaking change)
+* settings are now configurable through properties with Spring configuration metadata support
+
+== 1.0.0.RELEASE
+Initial public release available on http://search.maven.org/[Maven central].

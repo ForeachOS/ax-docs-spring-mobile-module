@@ -1,5 +1,5 @@
 name: spring-mobile-module
 title: "Module: Mobile Support"
-version: master
+version: 2.0.0
 nav:
 - modules/ROOT/nav.adoc

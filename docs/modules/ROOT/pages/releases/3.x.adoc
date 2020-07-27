@@ -2,5 +2,5 @@
 
 [#3-0-0]
 == 3.0.0.RELEASE
-* *Requires Across 5.0.0.*
+* *Requires Across 5.0.1.*
 * Spring upgrade related changes
